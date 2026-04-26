@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Your birthday</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<title>Happy Birthday 🎂</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="gif-container">
-            <img src="https://i.postimg.cc/kR7z6fWr/ututu.gif" alt="Valentine GIF">
-        </div>
-        <h1>It's your birthday, right?? ❤️</h1>
-        <button class="yes-btn" onclick="window.location.href='index2.html'">Yes</button>
-        <button class="no-btn" id="noBtn">No</button>
+<div class="container">
+    <div class="gif-container">
+        <img src="https://i.postimg.cc/kR7z6fWr/ututu.gif">
     </div>
-    <script src="js/script.js"></script>
+
+    <h1>Hari ini hari spesial 🎉</h1>
+    <h2>Selamat Ulang Tahun 🎂</h2>
+
+    <button class="yes-btn" onclick="goToPage()">
+        Buka Kejutan 🎁
+    </button>
+
+    <button class="no-btn" id="noBtn">
+        Jangan Klik 😆
+    </button>
+</div>
+
+<audio id="music">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="js/script.js"></script>
+
+<script>
+function goToPage() {
+    const music = document.getElementById("music");
+    music.play();
+    music.volume = 0.3;
+
+    setTimeout(() => {
+        window.location.href = "index2.html";
+    }, 300);
+}
+</script>
+
 </body>
 </html>
