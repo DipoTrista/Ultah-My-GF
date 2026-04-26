@@ -5,23 +5,19 @@ body {
     height: 100vh;
     text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     margin: 0;
     overflow: hidden;
 }
+
 h1 {
-    color: #ff5555;
+    color: white;
 }
-.container {
-    margin-top: 0px;
+
+h2 {
+    color: #fff;
 }
-.gif-container {
-    margin-bottom: 20px;
-}
-.gif-container img {
-    max-width: 300px;
-    height: auto;
-}
+
 button {
     font-size: 20px;
     padding: 10px 20px;
@@ -29,10 +25,12 @@ button {
     border: none;
     cursor: pointer;
 }
+
 .yes-btn {
     background-color: #38b44d;
     color: white;
 }
+
 .no-btn {
     background-color: #e93d3d;
     color: white;
